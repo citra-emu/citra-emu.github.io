@@ -1,8 +1,14 @@
 html, body {
-	font-family: "Helvetica" "Arial" sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin: 0;
 	padding: 0;
 }
+
+
+
+/* ********************************************* */
+/* *** HEADER ********************************** */
+/* ********************************************* */
 
 header {
     padding: 0 10px;
@@ -39,8 +45,16 @@ header a:hover {
 	color: #F80;
 }
 
+
+
+/* ********************************************* */
+/* *** PAGES *********************************** */
+/* ********************************************* */
+
 .page {
-    height: 100vh;
+    min-height: 100vh;
+    border-top: 5px #F80 solid;
+    border-bottom: 5px #F80 solid;
 }
 
 .content {
@@ -60,23 +74,51 @@ header a:hover {
     text-decoration: underline;
 }
 
+p {
+    font-size: 14pt;
+    color: #333;
+}
 
+p + ul {
+    margin-top: 3px;
+}
 
+/* ********************************************* */
+/* *** HOME ************************************ */
 
 #home {
+    border-top: none;
     background-color: #fdfdfd;
 }
 
-#home .home-header {
-    text-align: center;
+#home #home-image-container {
+    margin: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    max-width: 512px;
+    width: 70vw;
 }
 
-#home h1.home-header {
+#home #home-image-container img {
+    max-height: 512px;
+    width: 100%;
+}
+
+/* ********************************************* */
+/* *** ABOUT *********************************** */
+
+#about .name-header {
+    text-align: center;
+    margin: 0;
+}
+
+#about h1.name-header {
+    margin-top: 15vh;
     font-size: 10vw;
     color: #000;
 }
 
-#home h2.home-header {
+#about h2.name-header {
     font-size: 5vw;
     color: #333;
 }
@@ -85,9 +127,30 @@ header a:hover {
     background-color: #efefef;
 }
 
+#about .content h3,p {
+    margin-bottom: 0;
+}
+
+#about .content h3 + p {
+    margin-top: 3px;
+}
+
+#about .content p + p {
+    margin-top: 3px;
+}
+
+/* ********************************************* */
+/* *** DOWNLOAD ******************************** */
+
 #download {
     background-color: #fdfdfd;
 }
+
+
+
+/* ********************************************* */
+/* *** FOOTER ********************************** */
+/* ********************************************* */
 
 footer {
     padding: 10px;
@@ -98,5 +161,8 @@ footer .footer-content {
     margin: 5px auto;
     text-align: center;
     max-width: 50%;
+}
+
+footer p {
     font-size: 9pt;
 }
