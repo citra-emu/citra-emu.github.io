@@ -1,9 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Citra - Experimental 3DS Emulator</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8">
+    <title>Citra - Experimental 3DS Emulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <script src="resources/smooth-scroll/dist/js/bind-polyfill.js"></script>
+    <script src="resources/smooth-scroll/dist/js/smooth-scroll.js"></script>
 </head>
 
 <body>
@@ -13,15 +16,15 @@
             <span id="logo"><a href="#home">Citra</a></span>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#download">Download</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#download">Download</a></li>
                     <li><a href="https://github.com/citra-emu/citra">Source</a></li>
                 </ul>
             </nav>
         </header>
         
         <div id="home-image-container">
-            <a href="#about"><img src="resources/citra-icns-multicolor/citra-512.png" /></a>
+            <a data-scroll href="#about"><img src="resources/citra-icns-multicolor/citra-512.png" /></a>
         </div>
     </div>
     
@@ -35,7 +38,7 @@
             <p>Citra is a <b>work-in-progress</b> emulator for the Nintendo 3DS.</p>
             
             <h3>What can it do?</h3>
-            <p>It can currently emulate <a href="https://github.com/smealum/ctrulib">ctrulib</a>-built homebrew programs, such as <a href="https://github.com/smealum/yeti3DS">Smealum's port of Yeti3DS.</a></p>
+            <p>It can currently emulate <a href="https://github.com/smealum/ctrulib">ctrulib</a>-built homebrew programs, such as <a href="https://github.com/smealum/yeti3DS">Smealum's port of Yeti3DS</a>.</p>
             
             <h3>Will it run &lt;insert retail game here&gt;?</h3>
             <p>In nice, bold letters: <b>No! Citra is not ready yet!</b>. Citra will <b>not</b> run Pokemon, Super Mario Bros., or any of your other favorite 3DS games yet. </p>
@@ -70,4 +73,12 @@
         </div>
 	</footer>
 </body>
+    
+<script>
+    smoothScroll.init({
+        speed: 400,
+        updateURL: false
+    });
+</script>
+
 </html>
