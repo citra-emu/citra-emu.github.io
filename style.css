@@ -93,7 +93,7 @@ p + ul {
 
 #home {
     border-top: none;
-    background-color: #fdfdfd;
+    background-color: #fcfcfc;
 }
 
 #home #home-image-container {
@@ -136,7 +136,7 @@ p + ul {
 /* *** ABOUT *********************************** */
 
 #about {
-    background-color: #efefef;
+    background-color: #fafafa;
 }
 
 #about .content h3,p {
@@ -155,7 +155,7 @@ p + ul {
 /* *** DOWNLOAD ******************************** */
 
 #download {
-    background-color: #fdfdfd;
+    background-color: #fcfcfc;
 }
 
 
@@ -166,7 +166,7 @@ p + ul {
 
 footer {
     padding: 10px;
-    background-color: #efefef;
+    background-color: #fafafa;
 }
 
 footer .footer-content {
