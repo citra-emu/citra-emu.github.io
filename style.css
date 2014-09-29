@@ -65,6 +65,11 @@ header a:hover {
 	margin-left: -2%;
 }
 
+.content h1 {
+    text-align: center;
+    font-size: 32pt;
+}
+
 .content a {
     color: #F80;
     text-decoration: none;
@@ -93,8 +98,7 @@ p + ul {
 
 #home #home-image-container {
     margin: auto;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 3vh;
     max-width: 512px;
     width: 70vw;
 }
@@ -104,24 +108,32 @@ p + ul {
     width: 100%;
 }
 
-/* ********************************************* */
-/* *** ABOUT *********************************** */
-
-#about .name-header {
+#home .name-header {
     text-align: center;
     margin: 0;
+    padding: 0;
+    
+    text-shadow:
+        -1px -1px 0 #FFF,
+         1px -1px 0 #FFF,
+        -1px  1px 0 #FFF,
+         1px  1px 0 #FFF;
 }
 
-#about h1.name-header {
-    margin-top: 15vh;
+#home h1.name-header {
+    margin-top: -150px;
     font-size: 10vw;
     color: #000;
 }
 
-#about h2.name-header {
+#home h2.name-header {
+    margin-bottom: 15vh;
     font-size: 5vw;
     color: #333;
 }
+
+/* ********************************************* */
+/* *** ABOUT *********************************** */
 
 #about {
     background-color: #efefef;
