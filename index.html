@@ -18,7 +18,7 @@
                 <ul>
                     <li><a data-scroll href="#about">About</a></li>
                     <li><a data-scroll href="#download">Download</a></li>
-                    <li><a href="https://github.com/citra-emu/citra">Source</a></li>
+                    <li><a href="https://github.com/citra-emu/citra">GitHub</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,8 +27,10 @@
             <a data-scroll href="#about"><img src="resources/citra-icns-multicolor/citra-1024.png" /></a>
         </div>
         
-        <h1 class="name-header">Citra</h1>
-        <h2 class="name-header">An Experimental 3DS Emulator</h2>
+        <div id="home-name-headers">
+            <h1 class="name-header">Citra</h1>
+            <h2 class="name-header">An Experimental 3DS Emulator</h2>
+        </div>
     </div>
     
     <div id="about" class="page">        
@@ -54,7 +56,7 @@
             <p>In short, there's no real recommended hardware, but it is suffice to say that you want the fastest possible processor, and a graphics chip that supports at least OpenGL 3.</p>
 
             <h3>Where can I download Citra?</h3>
-            <p>At the moment, there are no stable versions of Citra for you to download. Soon, we'll make available nightly builds for Windows and Linux users, but for now you'll have to compile from source. Once Citra has progressed to the point where a stable version becomes viable, it will be available for all three platforms.</p>
+            <p>At the moment, there are no stable versions of Citra for you to download. Soon, we'll make available nightly builds for users to download, but for now you'll have to compile from source. Once Citra has progressed to the point where a stable version becomes viable.</p>
 
             <h3>How can I help?</h3>
             <p>Citra'a source is hosted on <a href="https://github.com/citra-emu/citra">GitHub</a>, which is a platform where developers can come together on a project, submitting pull requests with code changes.</p>
@@ -69,19 +71,27 @@
         <div class="content">
             <h1>Downloads</h1>
 
-            <h3>Latest Stable Release</h3>
-            <a href="./releases/0.1-linux.tar.gz">Linux</a> | 
-            <a href="./releases/0.1-windows.exe">Windows</a> | 
-            <a href="./releases/0.1-mac.dmg">Mac</a>
+<!-- For nightly downloads once they're ready:
+            <div class="dl-block">
+                <h3>Latest Nightly Release</h3>
+                <a href="./nightly/latest-linux"><img class="dl-icon" src="resources/platform-icons/linux-128.png"/></a>
+                <a href="./releases/latest-windows"><img class="dl-icon" src="resources/platform-icons/os-windows8-128.png"/></a>
+                <a href="./releases/latest-mac"><img class="dl-icon" src="resources/platform-icons/mac-os-128.png"/></a>
+            </div>
+-->
 
-            <h3>Other Downloads</h3>
-            <a href="https://github.com/citra-emu/citra">Source code</a>
+            <div class="dl-block">
+                <h3>Source Code</h3>
+                <a href="https://github.com/citra-emu/citra"><img class="dl-icon" src="resources/platform-icons/github-6-128.png"/></a>
+                <a href="https://github.com/citra-emu/citra/archive/master.zip"><img class="dl-icon" src="resources/platform-icons/zip-128.png"/></a>
+            </div>
         </div>
     </div>
 
 	<footer>
         <div class="footer-content">
             <p>Copyright © 2014 - Citra Team</p>
+            <p>Windows, Mac, Linux, and zip icons licensed from <a href="http://icons8.com">icons8</a> under CC BY-ND 3.0 US.</p>
             <p>This site is <a href="https://github.com/citra-emu/www">on GitHub</a>!</p>
         </div>
 	</footer>

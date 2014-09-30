@@ -99,12 +99,12 @@ p + ul {
 #home #home-image-container {
     margin: auto;
     padding-top: 3vh;
-    max-width: 512px;
+    max-width: 400px;
     width: 70vw;
 }
 
 #home #home-image-container img {
-    max-height: 512px;
+    max-height: 400px;
     width: 100%;
 }
 
@@ -121,14 +121,14 @@ p + ul {
 }
 
 #home h1.name-header {
-    margin-top: -150px;
-    font-size: 10vw;
+    margin-top: 0;
+    font-size: 8vw;
     color: #000;
 }
 
 #home h2.name-header {
     margin-bottom: 15vh;
-    font-size: 5vw;
+    font-size: 4vw;
     color: #333;
 }
 
@@ -156,6 +156,31 @@ p + ul {
 
 #download {
     background-color: #fcfcfc;
+}
+
+.dl-block {
+    text-align: center;
+}
+
+.dl-block h3 {
+    margin-bottom: 0;
+}
+
+img.dl-icon {
+    padding: 40px;
+    margin: 5px;
+    border: 3px black solid;
+    
+    width: 4vw;
+    max-width: 64px;
+    min-width: 32px;
+    
+    transition: background-color 0.4s ease;
+    background-color: white;
+}
+
+img.dl-icon:hover {
+    background-color: #f80;
 }
 
 
