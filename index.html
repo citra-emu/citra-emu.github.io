@@ -1,79 +1,107 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Citra : Nintendo 3DS emulator/debugger">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Citra</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/citra-emu/citra">View on GitHub</a>
-
-          <h1 id="project_title">Citra</h1>
-          <h2 id="project_tagline">Nintendo 3DS emulator/debugger</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/citra-emu/citra/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/citra-emu/citra/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Citra maintained by <a href="https://github.com/citra-emu">citra-emu</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<head>
+    <meta charset="utf-8">
+    <title>Citra - Experimental 3DS Emulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     
+    <script src="resources/smooth-scroll/dist/js/bind-polyfill.js"></script>
+    <script src="resources/smooth-scroll/dist/js/smooth-scroll.js"></script>
+</head>
 
-  </body>
+<body>
+    
+    <div id="home" class="page">
+        <header>
+            <span id="logo"><a href="#home">Citra</a></span>
+            <nav>
+                <ul>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#download">Download</a></li>
+                    <li><a href="https://github.com/citra-emu/citra">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="home-image-container">
+            <a data-scroll href="#about"><img src="resources/citra-icns-multicolor/citra-1024.png" /></a>
+        </div>
+        
+        <div id="home-name-headers">
+            <h1 class="name-header">Citra</h1>
+            <h2 class="name-header">An Experimental 3DS Emulator</h2>
+        </div>
+    </div>
+    
+    <div id="about" class="page">        
+        <div class="content">
+            <h1>About Citra</h1>
+            
+            <h3>What is Citra?</h3>
+            <p>Citra is a <b>work-in-progress</b> emulator for the Nintendo 3DS.</p>
+            
+            <h3>What can it do?</h3>
+            <p>It can currently emulate <a href="https://github.com/smealum/ctrulib">ctrulib</a>-built homebrew programs, such as <a href="https://github.com/smealum/yeti3DS">Smealum's port of Yeti3DS</a>.</p>
+            
+            <h3>Will it run &lt;insert retail game here&gt;?</h3>
+            <p>In nice, bold letters: <b>No! Citra is not ready yet!</b>. Citra will <b>not</b> run Pokemon, Super Mario Bros., or any of your other favorite 3DS games yet. </p>
+            <p>If you check back in a year or two, this may no longer be the case.</p>
+            
+            <h3>What platforms does Citra support?</h3>
+            <p>We're pleased to say that Citra works on all three major desktop OSs!</p>
+            <p>Citra is compatible with Windows, Linux, and OS X. In the far future, mobile platforms may be targeted as well.</p>
+            
+            <h3>What kind of specs do I need to run Citra?</h3>
+            <p>Citra currently uses an interpreter to emulate the 3DS's hardware. As one might imagine, this is very inefficient, so it is doubtful that most (if any!) consumer hardware would be fast enough to run at full-speed.</p>
+            <p>In short, there's no real recommended hardware, but it is suffice to say that you want the fastest possible processor, and a graphics chip that supports at least OpenGL 3.</p>
+
+            <h3>Where can I download Citra?</h3>
+            <p>At the moment, there are no stable versions of Citra for you to download. Soon, we'll make available nightly builds for users to download, but for now you'll have to compile from source. Once Citra has progressed to the point where a stable version becomes viable.</p>
+
+            <h3>How can I help?</h3>
+            <p>Citra'a source is hosted on <a href="https://github.com/citra-emu/citra">GitHub</a>, which is a platform where developers can come together on a project, submitting pull requests with code changes.</p>
+            <p>You probably want to check out the <a href="https://github.com/citra-emu/citra/blob/master/CONTRIBUTING.md">contributor's guide</a> and the <a href="https://github.com/citra-emu/citra/wiki/Developer-Information">developer information</a>. You can look to the <a href="https://github.com/citra-emu/citra/wiki/Roadmap">project roadmap</a> for ideas.</p>
+            <p>You can also chat with us at #citra on <a href="webchat.freenode.net">freenode</a>. We'll take all the help we can get!</p>
+            
+        </div>
+    </div>
+
+
+    <div id="download" class="page">
+        <div class="content">
+            <h1>Downloads</h1>
+
+<!-- For nightly downloads once they're ready:
+            <div class="dl-block">
+                <h3>Latest Nightly Release</h3>
+                <a href="./nightly/latest-linux"><img class="dl-icon" src="resources/platform-icons/linux-128.png"/></a>
+                <a href="./releases/latest-windows"><img class="dl-icon" src="resources/platform-icons/os-windows8-128.png"/></a>
+                <a href="./releases/latest-mac"><img class="dl-icon" src="resources/platform-icons/mac-os-128.png"/></a>
+            </div>
+-->
+
+            <div class="dl-block">
+                <h3>Source Code</h3>
+                <a href="https://github.com/citra-emu/citra"><img class="dl-icon" src="resources/platform-icons/github-6-128.png"/></a>
+                <a href="https://github.com/citra-emu/citra/archive/master.zip"><img class="dl-icon" src="resources/platform-icons/zip-128.png"/></a>
+            </div>
+        </div>
+    </div>
+
+	<footer>
+        <div class="footer-content">
+            <p>Copyright © 2014 - Citra Team</p>
+            <p>Windows, Mac, Linux, and zip icons licensed from <a href="http://icons8.com">icons8</a> under CC BY-ND 3.0 US.</p>
+            <p>This site is <a href="https://github.com/citra-emu/www">on GitHub</a>!</p>
+        </div>
+	</footer>
+</body>
+    
+<script>
+    smoothScroll.init({
+        speed: 400,
+        updateURL: false
+    });
+</script>
+
 </html>

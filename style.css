@@ -1,0 +1,205 @@
+html, body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* ********************************************* */
+/* *** HEADER ********************************** */
+/* ********************************************* */
+
+header {
+    padding: 0 10px;
+    font-size: 12pt;
+	background-color: #404040;
+}
+
+header #logo {
+    font-size: 15pt; 
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+header a {
+	color: #E0E0E0;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #F80;
+}
+
+
+
+/* ********************************************* */
+/* *** PAGES *********************************** */
+/* ********************************************* */
+
+.page {
+    min-height: 100vh;
+    border-top: 5px #F80 solid;
+    border-bottom: 5px #F80 solid;
+}
+
+.content {
+	padding: 15vh 5%;
+}
+
+.content h1,h2,h3 {
+	margin-left: -2%;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 32pt;
+}
+
+.content a {
+    color: #F80;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14pt;
+    color: #333;
+}
+
+p + ul {
+    margin-top: 3px;
+}
+
+/* ********************************************* */
+/* *** HOME ************************************ */
+
+#home {
+    border-top: none;
+    background-color: #fcfcfc;
+}
+
+#home #home-image-container {
+    margin: auto;
+    padding-top: 3vh;
+    max-width: 400px;
+    width: 70vw;
+}
+
+#home #home-image-container img {
+    max-height: 400px;
+    width: 100%;
+}
+
+#home .name-header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+    text-shadow:
+        -1px -1px 0 #FFF,
+         1px -1px 0 #FFF,
+        -1px  1px 0 #FFF,
+         1px  1px 0 #FFF;
+}
+
+#home h1.name-header {
+    margin-top: 0;
+    font-size: 8vw;
+    color: #000;
+}
+
+#home h2.name-header {
+    margin-bottom: 15vh;
+    font-size: 4vw;
+    color: #333;
+}
+
+/* ********************************************* */
+/* *** ABOUT *********************************** */
+
+#about {
+    background-color: #fafafa;
+}
+
+#about .content h3,p {
+    margin-bottom: 0;
+}
+
+#about .content h3 + p {
+    margin-top: 3px;
+}
+
+#about .content p + p {
+    margin-top: 3px;
+}
+
+/* ********************************************* */
+/* *** DOWNLOAD ******************************** */
+
+#download {
+    background-color: #fcfcfc;
+}
+
+.dl-block {
+    text-align: center;
+}
+
+.dl-block h3 {
+    margin-bottom: 0;
+}
+
+img.dl-icon {
+    padding: 40px;
+    margin: 5px;
+    border: 3px black solid;
+    
+    width: 4vw;
+    max-width: 64px;
+    min-width: 32px;
+    
+    transition: background-color 0.4s ease;
+    background-color: white;
+}
+
+img.dl-icon:hover {
+    background-color: #f80;
+}
+
+
+
+/* ********************************************* */
+/* *** FOOTER ********************************** */
+/* ********************************************* */
+
+footer {
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+footer .footer-content {
+    margin: 5px auto;
+    text-align: center;
+    max-width: 50%;
+}
+
+footer p {
+    font-size: 9pt;
+}
