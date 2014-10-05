@@ -1,0 +1,88 @@
+html, body {
+	font-family: "Helvetica" "Arial" sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    padding: 0 10px;
+    font-size: 12pt;
+	background-color: #404040;
+}
+
+header #logo {
+    font-size: 15pt; 
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+header a {
+	color: #E0E0E0;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #F80;
+}
+
+.page {
+    height: 100vh;
+}
+
+.content {
+	padding: 15vh 5%;
+}
+
+.content h1,h2,h3 {
+	margin-left: -2%;
+}
+
+.content a {
+    color: #F80;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+#home {
+    background-color: #fdfdfd;
+}
+
+#about {
+    background-color: #efefef;
+}
+
+#download {
+    background-color: #fdfdfd;
+}
+
+footer {
+    padding: 10px;
+    background-color: #efefef;
+}
+
+footer .footer-content {
+    margin: 5px auto;
+    text-align: center;
+    max-width: 50%;
+    font-size: 9pt;
+}
