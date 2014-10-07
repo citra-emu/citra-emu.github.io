@@ -55,10 +55,12 @@ header a:hover {
     min-height: 100vh;
     border-top: 5px #F80 solid;
     border-bottom: 5px #F80 solid;
+    overflow: hidden;
 }
 
 .content {
 	padding: 15vh 5%;
+    overflow: hidden;
 }
 
 .content h1,h2,h3 {
@@ -149,6 +151,18 @@ p + ul {
 
 #about .content p + p {
     margin-top: 3px;
+}
+
+.imagebar {
+    float: left;
+    width: 25vw;
+    max-width: 400px;
+}
+
+.imagebar img {
+    padding: 1px;
+    width: 25vw;
+    max-width: 400px;
 }
 
 /* ********************************************* */
