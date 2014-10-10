@@ -1,0 +1,20 @@
+#imagebar {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+    padding: 0;
+}
+
+#imagebar div {
+    display: inline-block;
+    padding: 0.5vw;
+}
+
+#imagebar img {
+    width: 23vw;
+}
