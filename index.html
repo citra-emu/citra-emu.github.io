@@ -52,7 +52,7 @@
     </div>
     
     <div id="about" class="page">
-        <div class="imagebar">
+        <div id="imagebar">
             <div><img src="resources/game-screenshots/yeti3DS-1.png" /></div>
             <div><img src="resources/game-screenshots/yeti3DS-2.png" /></div>
             <div><img src="resources/game-screenshots/yeti3DS-3.png" /></div>
@@ -132,7 +132,7 @@
         });
         
         
-        var $imagebar = $('.imagebar');
+        var $imagebar = $('#imagebar');
         
         $resize_imagebar = (function() {
             var $imagebar_newheight = $imagebar.parent().height();
