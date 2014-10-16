@@ -60,7 +60,6 @@ header a:hover {
 
 .content {
 	padding: 15vh 5%;
-    overflow: hidden;
 }
 
 .content h1,h2,h3 {
@@ -135,6 +134,22 @@ p + ul {
 }
 
 /* ********************************************* */
+/* *** IMAGEBAR ******************************** */
+
+#imagebar {
+    padding: 0.5vw;
+    margin: 0;
+}
+
+#imagebar img {
+    margin: auto;
+    width: 24vw;
+    max-width: 400px;
+    border: 0.2vw #000 solid;
+    border-radius: 0.3vw;
+}
+
+/* ********************************************* */
 /* *** ABOUT *********************************** */
 
 #about {
@@ -151,18 +166,6 @@ p + ul {
 
 #about .content p + p {
     margin-top: 3px;
-}
-
-#imagebar {
-    float: left;
-    width: 25vw;
-    max-width: 400px;
-}
-
-#imagebar img {
-    padding: 1px;
-    width: 25vw;
-    max-width: 400px;
 }
 
 /* ********************************************* */
@@ -184,6 +187,7 @@ img.dl-icon {
     padding: 40px;
     margin: 5px;
     border: 3px black solid;
+    border-radius: 0.3vw;
     
     width: 4vw;
     max-width: 64px;
