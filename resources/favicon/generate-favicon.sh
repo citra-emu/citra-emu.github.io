@@ -1,9 +1,13 @@
 #!/bin/bash
 
-## REQUIRES: librsvg, imagemagick
+## REQUIRED: librsvg, imagemagick
 #### On OS X:   `brew install librsvg imagemagick`
 #### On Debian: `apt-get install librsvg2-bin imagemagick`
 #### On Arch:   `pacman -S librsvg imagemagick`
+## RECOMMENDED: optipng
+#### On OS X:   `brew install optipng`
+#### On Debian: `apt-get install optipng`
+#### On Arch:   `pacman -S optipng`
 
 if [ -z $1 ]; then
 	echo "You must specify an svg file to generate favicon images from!"
@@ -35,6 +39,10 @@ function svg2png {
 	rsvg-convert $SVG_PATH -w $SIZE -o $OUTPUT_PNG 1>/dev/null
 	if ! $SILENT; then
 		echo "Created PNG: ${OUTPUT_PNG}"
+	fi
+
+	if which optipng &>/dev/null; then
+		optipng -quiet ${OUTPUT_PNG}
 	fi
 }
 
