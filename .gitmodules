@@ -1,0 +1,6 @@
+[submodule "scripts/slick"]
+	path = scripts/slick
+	url = https://github.com/kenwheeler/slick
+[submodule "scripts/smooth-scroll"]
+	path = scripts/smooth-scroll
+	url = https://github.com/cferdinandi/smooth-scroll
