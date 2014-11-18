@@ -62,7 +62,7 @@ header a:hover {
 	padding: 15vh 5%;
 }
 
-.content h1,h2,h3 {
+.content h2,h3 {
 	margin-left: -2%;
 }
 
@@ -173,10 +173,11 @@ p + ul {
 
 #download {
     background-color: #fcfcfc;
+    text-align: center;
 }
 
-.dl-block {
-    text-align: center;
+#download .content h3 {
+    margin-left: 0;
 }
 
 .dl-block h3 {
@@ -199,6 +200,18 @@ img.dl-icon {
 
 img.dl-icon:hover {
     background-color: #f80;
+}
+
+p.alert {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 4vh 0;
+    
+    background-color: #F80;
+    color: #FFF;
+    font-size: 18pt;
 }
 
 
