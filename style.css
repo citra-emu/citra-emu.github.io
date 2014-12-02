@@ -137,15 +137,15 @@ p + ul {
 /* *** IMAGEBAR ******************************** */
 
 #imagebar {
-    padding: 0.5vw;
     margin: 0;
+    background-color: #F80;
 }
 
 #imagebar img {
     margin: auto;
     width: 24vw;
     max-width: 400px;
-    border: 0.2vw #000 solid;
+    border: 2px #FFF solid;
     border-radius: 0.3vw;
 }
 
