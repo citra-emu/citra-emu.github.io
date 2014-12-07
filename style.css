@@ -101,12 +101,13 @@ p + ul {
     margin: auto;
     padding-top: 3vh;
     max-width: 400px;
-    width: 60vw;
+    width: 40vw;
 }
 
 #home #home-image-container img {
     max-height: 400px;
     height: 50vh;
+    min-height: 20vw;
     width: 100%;
 }
 
