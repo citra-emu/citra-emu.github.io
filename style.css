@@ -11,17 +11,49 @@ html, body {
 /* ********************************************* */
 
 header {
-    padding: 0 10px;
-    font-size: 12pt;
-	background-color: #404040;
+    background-color: #404040;
+    padding: 1vh 15vw;
+    color: #E0E0E0;
+    
+    overflow: hidden;
 }
 
 header #logo {
-    font-size: 15pt; 
+    display: table;
+    float: left;
+}
+
+header #logo .logo-text {
+    float: left;
+}
+
+header #logo p {
+    color: #E0E0E0;
+    display: table;
+    
+    margin: 0;
+}
+
+header #logo p.title {
+    font-size: 20pt;
+}
+
+header #logo p.subtitle {
+    font-size: 12pt;
+}
+
+header #logo img {
+    float: left;
+    height: 40pt;
+    margin-bottom: -8pt;
+    margin-right: 10px;
 }
 
 nav {
     display: inline-block;
+    float: right;
+    font-size: 12pt;
+    margin-top: 2pt;
 }
 
 nav ul {
@@ -34,10 +66,13 @@ nav ul li {
 	display: inline;
 }
 
+nav a {
+    padding: 14pt 10px;
+}
+
 header a {
-	color: #E0E0E0;
+    color: #E0E0E0;
 	display: inline-block;
-	padding: 10px;
 	text-decoration: none;
 }
 
