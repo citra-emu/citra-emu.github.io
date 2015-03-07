@@ -94,7 +94,7 @@ header a:hover {
 }
 
 .content {
-	padding: 15vh 5%;
+	padding: 15vh 15vw;
 }
 
 .content h2,h3 {
@@ -178,12 +178,39 @@ p + ul {
     background-color: #F80;
 }
 
+#imagebar .slick-slide {
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+
 #imagebar img {
     margin: auto;
-    width: 24vw;
+    width: 70vw;
     max-width: 400px;
+
     border: 2px #FFF solid;
-    border-radius: 0.3vw;
+    border-bottom: none;
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+}
+
+#imagebar p {
+    margin: auto;
+    width: 70vw;
+    max-width: 400px;
+
+    border: 2px #FFF solid;
+    border-top: none;
+    font-size: 10pt;
+
+    color: #FFF;
+    background-color: #111;
+
+    text-align: center;
 }
 
 /* ********************************************* */

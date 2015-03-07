@@ -26,8 +26,8 @@
     <link rel="shortcut icon" href="resources/favicon/favicon.ico" />
 
     <!-- Smooth Scroll script -->
-    <script src="scripts/smooth-scroll/dist/js/bind-polyfill.js"></script>
-    <script src="scripts/smooth-scroll/dist/js/smooth-scroll.js"></script>
+    <script src="scripts/smooth-scroll/dist/js/bind-polyfill.min.js"></script>
+    <script src="scripts/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 
     <!-- Google Analytics -->
     <script>
@@ -71,17 +71,35 @@
             <h2 class="name-header">An Experimental 3DS Emulator</h2>
         </div>
     </div>
-    
+
     <div id="imagebar">
-        <div><img src="resources/game-screenshots/yeti3DS-1.png" /></div>
-        <div><img src="resources/game-screenshots/3dscraft-1.png" /></div>
-        <div><img src="resources/game-screenshots/vvvvvv-1.png" /></div>
-        <div><img src="resources/game-screenshots/cave-story-1.png" /></div>
-        <div><img src="resources/game-screenshots/3dnes-1.png" /></div>
-        <div><img src="resources/game-screenshots/gameyob-1.png" /></div>
-        <div><img src="resources/game-screenshots/cave-story-2.png" /></div>
-        <div><img src="resources/game-screenshots/hbmenu-1.png" /></div>
-        <div><img src="resources/game-screenshots/worldof3dsand-1.png" /></div>
+        <div><img src="resources/game-screenshots/cavestory-1.png" />
+            <p>Cave Story</p>
+        </div>
+        <div><img src="resources/game-screenshots/woahdave-1.png" />
+            <p>Woah Dave!</p>
+        </div>
+        <div><img src="resources/game-screenshots/superacorns-1.png" />
+            <p>Super Little Acorns</p>
+        </div>
+        <div><img src="resources/game-screenshots/oracleages-1.png" />
+            <p>The Legend of Zelda - Oracle of Ages</p>
+        </div>
+        <div><img src="resources/game-screenshots/picrosse-1.png" />
+            <p>Picross E</p>
+        </div>
+        <div><img src="resources/game-screenshots/yeti3DS-1.png" />
+            <p>Yeti3DS</p>
+        </div>
+        <div><img src="resources/game-screenshots/3dscraft-1.png" />
+            <p>3DSCraft</p>
+        </div>
+        <div><img src="resources/game-screenshots/3dnes-1.png" />
+            <p>3DNES</p>
+        </div>
+        <div><img src="resources/game-screenshots/gameyob-1.png" />
+            <p>GameYob</p>
+        </div>
     </div>
     
     <div id="about" class="page">        
@@ -135,7 +153,6 @@
         </div>
     </div>
 
-
     <div id="download" class="page">
         <p class="alert">Remember that <b>NO</b> commercial software is playable in Citra.</p>
         
@@ -172,19 +189,24 @@
     <script type="text/javascript" src="scripts/slick/slick/slick.min.js"></script>
     
     <script type="text/javascript">
-        smoothScroll.init({
-            speed: 400,
-            updateURL: false
-        });
-        
         $(document).ready(function(){            
             $('#imagebar').slick({
                 infinite: true,
-                slidesToShow: 4,
+                centerMode: true,
                 slidesToScroll: 1,
+                swipeToSlide: true,
                 autoplay: true,
-                autoplaySpeed: 4000,
+                autoplaySpeed: 6000,
+                pauseOnHover: false,
                 arrows: false,
+                focusOnSelect: true,
+                draggable: false,
+                variableWidth: true
+            });
+
+            smoothScroll.init({
+                speed: 400,
+                updateURL: false
             });
         });
         
