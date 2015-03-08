@@ -196,25 +196,30 @@
     <script type="text/javascript" src="scripts/slick/slick/slick.min.js"></script>
     
     <script type="text/javascript">
-        $(document).ready(function(){            
-            $('#imagebar').slick({
-                infinite: true,
-                centerMode: true,
-                slidesToScroll: 1,
-                swipeToSlide: true,
-                autoplay: true,
-                autoplaySpeed: 6000,
-                pauseOnHover: false,
-                arrows: false,
-                focusOnSelect: true,
-                draggable: false,
-                variableWidth: true
-            });
 
-            smoothScroll.init({
-                speed: 400,
-                updateURL: false
+        if (window.jQuery) {
+            $(document).ready(function () {
+                $('#imagebar').slick({
+                    infinite: true,
+                    centerMode: true,
+                    slidesToScroll: 1,
+                    swipeToSlide: true,
+                    autoplay: true,
+                    autoplaySpeed: 6000,
+                    pauseOnHover: false,
+                    arrows: false,
+                    focusOnSelect: true,
+                    draggable: false,
+                    variableWidth: true
+                });
             });
+        } else {
+            document.write('<link rel="stylesheet" type="text/css" href="noscript.css">');
+        }
+
+        smoothScroll.init({
+            speed: 400,
+            updateURL: false
         });
         
     </script>
