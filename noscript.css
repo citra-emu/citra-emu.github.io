@@ -16,5 +16,6 @@
 }
 
 #imagebar img {
-    width: 23vw;
+    width: 400px;
+    max-width: 70vw;
 }
