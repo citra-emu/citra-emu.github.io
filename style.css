@@ -266,19 +266,23 @@ img.dl-icon:hover {
     background-color: #f80;
 }
 
-p.alert {
+.ad-rect {
     position: absolute;
     left: 0;
     right: 0;
     margin: 0;
-    padding: 4vh 0;
+    padding: 0.5vh 0;
     
     background-color: #F80;
     color: #FFF;
-    font-size: 18pt;
 }
 
-
+.ad-container {
+    margin: auto;
+}
+@media (max-width:400px) { .ad-container { display: none; } }
+@media (min-width:500px) { .ad-container { width: 468px; height: 60px; } }
+@media (min-width:800px) { .ad-container { width: 728px; height: 90px; } }
 
 /* ********************************************* */
 /* *** FOOTER ********************************** */
