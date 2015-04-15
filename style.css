@@ -240,6 +240,10 @@ p + ul {
     text-align: center;
 }
 
+#download .content {
+    padding-top: 7vh;
+}
+
 #download .content h3 {
     margin-left: 0;
 }
@@ -267,11 +271,8 @@ img.dl-icon:hover {
 }
 
 .ad-rect {
-    position: absolute;
-    left: 0;
-    right: 0;
     margin: 0;
-    padding: 0.5vh 0;
+    padding-bottom: 10px;
     
     background-color: #F80;
     color: #FFF;
